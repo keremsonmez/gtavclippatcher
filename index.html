@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Rockstar Editor Clip Patcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🎬 Rockstar Editor Clip Patcher</h1>
+            <p class="subtitle">Pattern Patcher for GTA V Clips created by WaydeTheKiwi, developed by Quadria</p>
+            <p class="subtitle">You can access your clips from the following location:</p>
+            <p class="subtitle">YOURPC\AppData\Local\Rockstar Games\GTA V\videos\clip</p>
+        </header>
+        <!-- File Upload Section -->
+        <section class="card">
+            <label class="label">📁 Select Clip Files</label>
+            <div class="file-input-wrapper">
+                <input type="file" id="fileInput" multiple accept=".clip" class="file-input">
+                <label for="fileInput" class="file-label">
+                    <span id="fileText">Choose .clip files or drag & drop</span>
+                </label>
+            </div>
+            <div id="fileList" class="file-list"></div>
+        </section>
+
+        <!-- Patterns Section -->
+        <section class="card">
+            <label class="label" for="patterns">📝 Patterns (one per line)</label>
+            <div class="helper-text">Supports wildcards: * (any chars), ? (single char)</div>
+            <textarea id="patterns" class="textarea" placeholder="Enter patterns to find and replace...
+Example:
+ox_lib
+dpemotes
+PlayerName"></textarea>
+        </section>
+
+        <!-- Options Section -->
+        <section class="card">
+            <label class="label">⚙️ Options</label>
+
+            <div class="option-group">
+                <div class="radio-group">
+                    <span class="option-label">Mode:</span>
+                    <label class="radio-label">
+                        <input type="radio" name="mode" value="null" checked>
+                        <span>Null Bytes (Recommended)</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="mode" value="placeholder">
+                        <span>Placeholder</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="option-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="caseInsensitive">
+                    <span>Case Insensitive</span>
+                </label>
+
+                <div class="input-group">
+                    <label for="placeholder" class="option-label">Placeholder:</label>
+                    <input type="text" id="placeholder" value="REMOVED" class="input-text">
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Button -->
+        <button id="startBtn" class="btn-primary">
+            🚀 Start Patching
+        </button>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <!-- Log Section -->
+        <section class="card log-section">
+            <label class="label">📋 Log</label>
+            <div id="log" class="log"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
