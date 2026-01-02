@@ -112,6 +112,32 @@ body {
     font-weight: 500;
 }
 
+/* Info Box */
+.info-box {
+    background: linear-gradient(135deg, rgba(81, 207, 102, 0.1) 0%, rgba(81, 207, 102, 0.05) 100%);
+    border: 1px solid rgba(81, 207, 102, 0.3);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    padding-left: 28px;
+}
+
+.info-text::before {
+    content: "ℹ️";
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+}
+
 /* Cards */
 .card {
     background: var(--bg-card);

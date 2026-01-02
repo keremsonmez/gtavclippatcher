@@ -5,6 +5,7 @@ const en = {
     subtitle: "Pattern Patcher for GTA V Clips created by WaydeTheKiwi, developed by Quadria",
     clipLocation: "You can access your clips from the following location:",
     clipPath: "YOURPC\\AppData\\Local\\Rockstar Games\\GTA V\\videos\\clip",
+    crashInfo: "When you experience a crash while editing a clip you recorded in the game, removing the relevant map, script, or tool, or replacing it with another resource, will help you recover the clip.",
     fileLabel: "📁 Select Clip Files",
     fileText: "Choose .clip files or drag & drop",
     patternsLabel: "📝 Patterns (one per line)",

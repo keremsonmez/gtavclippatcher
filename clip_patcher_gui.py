@@ -417,4 +417,3 @@ class ClipPatcherApp(ctk.CTk):
 if __name__ == "__main__":
     app = ClipPatcherApp()
     app.mainloop()
-

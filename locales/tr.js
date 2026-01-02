@@ -5,6 +5,7 @@ const tr = {
     subtitle: "WaydeTheKiwi tarafından oluşturulan, Quadria tarafından geliştirilen GTA V Klip Düzenleyici",
     clipLocation: "Clip dosyalarınıza şu konumdan erişebilirsiniz:",
     clipPath: "YOURPC\\AppData\\Local\\Rockstar Games\\GTA V\\videos\\clip",
+    crashInfo: "Oyun içerisinde çektiğiniz bir klibi düzenlerken crash problemi yaşandığında, klibi kurtarmanız için ilgili mapi, scripti ya da aracı kaldırmanıza veya başka bir kaynakla değiştirmenize yarar.",
     fileLabel: "📁 Clip Dosyalarını Seç",
     fileText: ".clip dosyalarını seç veya sürükle-bırak",
     patternsLabel: "📝 Hata veren kaynaklar (Her satıra bir kaynak adı)",
@@ -21,7 +22,7 @@ asea`,
     caseInsensitive: "Büyük/Küçük Harf Duyarsız",
     placeholderLabel: "Değişen Resource Adı:",
     startButton: "🚀 Düzenlemeyi Başlat",
-    logLabel: "📋 Kayıt",
+    logLabel: "📋 Durum",
 
     // Messages / Mesajlar
     filesSelected: "dosya seçildi",
